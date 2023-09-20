@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    width: 35rem;
+    margin: 8rem 0;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-card {
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    background-image: url("../images/image-header-mobile.jpg");
+    background-size: cover;
+}
+
+.overlay-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+    background-color:  hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+section {
+    padding: 5rem 4rem 4rem 4rem;
+    text-align: center;
+}
+
+.heading-card {
+    font-size: 2.9rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.heading-card span {
+    color: hsl(277, 64%, 61%);
+}
+
+.description-card {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.detail-container p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.detail-container span {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+}
